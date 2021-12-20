@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HadiahActivity">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="390dp"
+        android:layout_height="248dp"
+        android:background="@drawable/boundup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="403dp"
+        android:layout_height="711dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/data_hadiah_tamu"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="168dp"
+            android:layout_height="154dp"
+            android:layout_marginBottom="24dp"
+            app:srcCompat="@drawable/kado" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtidkado"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="ID"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtupdatenamakado"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="masukan nama"
+                android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/btncarihadiah"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_search_24"
+                android:background="@drawable/boundblue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtupdatealamatkado"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bound"
+            android:gravity="center"
+            android:hint="Masukkan alamat"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnupdatehadiah"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bound"
+            android:text="UPDATE"
+            app:icon="@drawable/ic_baseline_edit_24" />
+
+        <Button
+            android:id="@+id/btndeletehadiah"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bound"
+            android:text="DELETE"
+            app:icon="@drawable/ic_baseline_delete_outline_24" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

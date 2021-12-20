@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bound3"
+        android:paddingStart="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="DATA TAMU UNDANGAN"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="514dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/edtnama"
+            android:layout_width="340dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bound"
+            android:gravity="center"
+            android:hint="Masukkan nama"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtnama">
+
+            <EditText
+                android:id="@+id/edtuang"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="jumlah uang"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtberas"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="beras (L)"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtOpak"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="Opak"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtPisang"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="Pisang"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtranginang"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="ranginang"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <EditText
+                android:id="@+id/edtwajit"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="Wajit"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtledram"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bound"
+                android:gravity="center"
+                android:hint="Kue ali"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/edtstatus"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bound"
+                android:entries="@array/status" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtlain"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bound"
+            android:gravity="center"
+            android:hint="Data lainnya"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtalamat"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bound"
+            android:gravity="center"
+            android:hint="Masukkan alamat"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsimpan"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bound"
+                android:text="SIMPAN"
+                app:icon="@drawable/ic_baseline_save_24" />
+
+            <Button
+                android:id="@+id/btnlihat"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bound"
+                android:text="LIHAT"
+                app:icon="@drawable/ic_baseline_read_more_24" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bound"
+            android:text="UPDATE"
+            app:icon="@drawable/ic_baseline_edit_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

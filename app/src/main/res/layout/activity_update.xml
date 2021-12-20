@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".UpdateActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#0447CD"
+        android:text="UPDATE DATA TAMU"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/edtidupd"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:hint="ID"
+            android:background="@drawable/bound"
+            android:layout_marginBottom="10dp"
+            />
+        <ImageButton
+            android:id="@+id/btncari"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="@drawable/boundblue"/>
+
+        <EditText
+            android:id="@+id/edtnamaupd"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bound"
+            android:gravity="center"
+            android:hint="nama tamu"
+            android:inputType="text" />
+        <ImageButton
+            android:id="@+id/btncarinama"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_person_search_24"
+            android:background="@drawable/boundblue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/edtuangupd"
+            android:gravity="center"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:hint="jumlah uang"
+            />
+        <EditText
+            android:id="@+id/edtberasudp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:layout_marginBottom="10dp"
+            android:hint="beras (L)"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp">
+        <EditText
+            android:id="@+id/edtOpakudp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:inputType="number"
+            android:hint="Opak"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtPisangudp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:hint="Pisang"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtranginangudp"
+            android:gravity="center"
+            android:layout_width="110dp"
+            android:inputType="number"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:hint="ranginang"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp">
+        <EditText
+            android:id="@+id/edtwajitudp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:hint="Wajit"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtledramudp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bound"
+            android:hint="Kue ali"
+            android:layout_marginRight="10dp"/>
+        <Spinner
+            android:id="@+id/edtstatusudp"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:entries="@array/status"
+            android:background="@drawable/bound"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtlainudp"
+        android:gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bound"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:hint="Data lainnya"
+        />
+
+    <EditText
+        android:id="@+id/edtalamatudp"
+        android:gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:background="@drawable/bound"
+        android:layout_marginBottom="10dp"
+        android:hint="Masukkan alamat"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bound"
+            android:text="UPDATE"
+            app:icon="@drawable/ic_baseline_edit_24" />
+
+        <Button
+            android:id="@+id/btdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bound"
+            android:text="DELETE"
+            app:icon="@drawable/ic_baseline_delete_outline_24" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Guest note App</string>
+    <string name="guestnoteapp">Selamat datang di aplikasi guest note app sebuah aplikasi untuk simpan data tamu undangan anda</string>
+    <string name="data_hadiah_tamu">DATA HADIAH TAMU</string>
+    <string-array name="status">
+        <item>Status</item>
+        <item>Simpan</item>
+        <item>Numbak</item>
+        <item>Bayar</item>
+    </string-array>
+    <string-array name="hadiah">
+        <item>Jenis Hadiah</item>
+        <item>Elektronik</item>
+        <item>Aksesoris</item>
+        <item>lainnya</item>
+    </string-array>
+</resources>

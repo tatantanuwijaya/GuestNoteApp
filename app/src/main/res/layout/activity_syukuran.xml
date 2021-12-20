@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SyukuranActivity">
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:background="@drawable/boundup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/syukuran" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.233">
+
+        <EditText
+            android:id="@+id/edtnamasyukuran"
+            android:background="@drawable/bound"
+            android:layout_marginBottom="10dp"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:hint="Masukkan nama"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtuangsyukuran"
+                android:layout_width="wrap_content"
+                android:background="@drawable/bound"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:hint="Uang" />
+
+            <EditText
+                android:id="@+id/edtberassyukuran"
+                android:layout_width="wrap_content"
+                android:background="@drawable/bound"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint="Beras" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtlainsyukuran"
+            android:layout_width="match_parent"
+            android:background="@drawable/bound"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Lainnya" />
+
+        <EditText
+            android:id="@+id/edtalamatsyukuran"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:background="@drawable/bound"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Masukkan alamat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsimpansyukuran"
+                android:background="@drawable/bound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                app:icon="@drawable/ic_baseline_save_24"
+                android:text="SIMPAN" />
+
+            <Button
+                android:id="@+id/btnlihatsyukuran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LIHAT"
+                android:background="@drawable/bound"
+                app:icon="@drawable/ic_baseline_person_search_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sukuranback"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bound"
+                android:text="KEMBALI"
+                app:icon="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <Button
+                android:id="@+id/btnupdsyukuran"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bound"
+                android:text="UPDATE"
+                app:icon="@drawable/ic_baseline_edit_24" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
